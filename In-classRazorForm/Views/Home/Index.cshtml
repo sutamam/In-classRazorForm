@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        <section>
+            @using (Html.BeginForm("InputNameState", "Home", FormMethod.Post))
+            {
+                <h1 class="display-6">Please enter the below detail</h1>
+                <br />
+                <label>Name: </label>
+                <input type="text" name="name" value="" />
+                <br />
+                <label>Home State: </label>
+                <input type="text" name="state" value="" />
+                <br />
+                <input type="submit" name="submit" value="Submit" />
+            }
+        </section>
+    </div>
